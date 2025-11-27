@@ -1,50 +1,143 @@
-// export default function DashboardLayout({ children }) {
-//   return (
-//     <div className="flex h-screen bg-gray-100 text-gray-900">
-      
-//       {/* Sidebar */}
-//       <aside className="w-60 bg-white shadow-lg p-6 flex flex-col gap-6">
-//         <h2 className="font-bold text-xl tracking-wide">EV Dashboard</h2>
 
-//         <nav className="flex flex-col gap-3 text-sm">
-//           <a className="hover:text-blue-600 cursor-pointer">Devices</a>
-//           <a className="hover:text-blue-600 cursor-pointer">Analytics</a>
-//           <a className="hover:text-blue-600 cursor-pointer">Reports</a>
-//           <a className="hover:text-blue-600 cursor-pointer">Settings</a>
-//         </nav>
+
+
+// import {
+//   MdDashboard,
+//   MdDevices,
+//   MdWarning,
+//   MdAnalytics,
+//   MdSettings,
+//   MdLogout,
+// } from "react-icons/md";
+// import { useNavigate } from "react-router-dom";
+
+// export default function DashboardLayout({ children }) {
+//   const navigate = useNavigate();
+
+//   const logout = () => {
+//     localStorage.removeItem("auth");
+//     navigate("/");
+//   };
+
+//   return (
+//     <div className="flex h-screen bg-gray-100">
+//       {/* Sidebar */}
+//       <aside className="w-64 bg-white shadow-xl p-6 flex flex-col justify-between border-r">
+        
+//         {/* Logo + Title */}
+//         <div>
+//           <h2 className="text-2xl font-extrabold tracking-wide text-blue-700">EV Monitor</h2>
+//           <p className="text-[13px] text-gray-500 mt-1">Real-time Fleet Status</p>
+
+//           {/* Navigation */}
+//           <nav className="mt-8 flex flex-col gap-5 text-[15px] font-medium text-gray-700">
+//             <button
+//               onClick={() => navigate("/devices")}
+//               className="flex items-center gap-3 hover:text-blue-600 transition"
+//             >
+//               <MdDashboard size={20} /> Dashboard
+//             </button>
+
+//             <button
+//               onClick={() => navigate("/devices")}
+//               className="flex items-center gap-3 hover:text-blue-600 transition"
+//             >
+//               <MdDevices size={20} /> Devices
+//             </button>
+
+//             <button
+//               onClick={() => navigate("/analytics")}
+//               className="flex items-center gap-3 hover:text-blue-600 transition"
+//             >
+//               <MdAnalytics size={20} /> Analytics
+//             </button>
+
+//             <button
+//               onClick={() => navigate("/alerts")}
+//               className="flex items-center gap-3 hover:text-blue-600 transition"
+//             >
+//               <MdWarning size={20} /> Alerts
+//             </button>
+
+//             <button
+//               onClick={() => navigate("/settings")}
+//               className="flex items-center gap-3 hover:text-blue-600 transition"
+//             >
+//               <MdSettings size={20} /> Settings
+//             </button>
+//           </nav>
+//         </div>
+
+//         {/* Logout Section */}
+//         <button
+//           className="flex items-center gap-3 text-red-600 hover:text-red-800 font-semibold transition"
+//           onClick={logout}
+//         >
+//           <MdLogout size={20} /> Logout
+//         </button>
 //       </aside>
 
-//       {/* Content section */}
-//       <main className="flex-1 p-8 overflow-y-auto bg-gray-50">
-//         {children}
-//       </main>
+//       {/* Content Area */}
+//       <main className="flex-1 p-8 overflow-y-auto">{children}</main>
 //     </div>
 //   );
 // }
 
-import { MdDashboard, MdDevices, MdAnalytics, MdSettings } from "react-icons/md";
+
+
+import {
+  MdDashboard,
+  MdSettings,
+  MdLogout,
+} from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 export default function DashboardLayout({ children }) {
-  return (
-    <div className="flex h-screen bg-gray-100 text-gray-900">
-      {/* Sidebar */}
-      <aside className="w-64 bg-white shadow-lg p-6 flex flex-col gap-6">
-        <h2 className="font-bold text-xl tracking-wide">EV Dashboard</h2>
+  const navigate = useNavigate();
 
-        <nav className="flex flex-col gap-5 text-[15px] font-medium">
-          <div className="flex items-center gap-3 text-blue-600 cursor-pointer">
-            <MdDashboard size={20} /> Dashboard
-          </div>
-          <div className="flex items-center gap-3 hover:text-blue-600 cursor-pointer">
-            <MdDevices size={20} /> Devices
-          </div>
-          <div className="flex items-center gap-3 hover:text-blue-600 cursor-pointer">
-            <MdAnalytics size={20} /> Analytics
-          </div>
-          <div className="flex items-center gap-3 hover:text-blue-600 cursor-pointer">
-            <MdSettings size={20} /> Settings
-          </div>
-        </nav>
+  const logout = () => {
+    localStorage.removeItem("auth");
+    navigate("/");
+  };
+
+  return (
+    <div className="flex h-screen bg-gray-100">
+      
+      {/* Sidebar */}
+      <aside className="w-64 bg-white shadow-xl p-6 flex flex-col justify-between border-r">
+        
+        {/* Logo */}
+        <div>
+          <h2 className="text-2xl font-extrabold tracking-wide text-blue-700">EV Monitor</h2>
+          <p className="text-[13px] text-gray-500 mt-1">Smart Device Dashboard</p>
+
+          {/* Navigation */}
+          <nav className="mt-8 flex flex-col gap-6 text-[15px] font-medium text-gray-700">
+            
+            <button
+              onClick={() => navigate("/devices")}
+              className="flex items-center gap-3 hover:text-blue-600 transition"
+            >
+              <MdDashboard size={20} /> Dashboard
+            </button>
+
+            <button
+              onClick={() => navigate("/settings")}
+              className="flex items-center gap-3 hover:text-blue-600 transition"
+            >
+              <MdSettings size={20} /> Settings
+            </button>
+
+          </nav>
+        </div>
+
+        {/* Logout */}
+        <button
+          className="flex items-center gap-3 text-red-600 hover:text-red-800 font-semibold transition"
+          onClick={logout}
+        >
+          <MdLogout size={20} /> Logout
+        </button>
       </aside>
 
       {/* Content */}
