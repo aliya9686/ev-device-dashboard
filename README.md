@@ -138,13 +138,3 @@ http://localhost:5173
 
 ---
 
-## Contact
-
-For questions or suggestions, please reach out:
-`ev-dashboard-support@example.com`
-
----
-
-## License
-This project is intended for assignment evaluation purposes.
-
