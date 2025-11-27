@@ -1,25 +1,5 @@
 
 
-// import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-// import Login from "./pages/Login";
-// import Devices from "./pages/Devices";
-
-// export default function App() {
-//   const isLoggedIn = localStorage.getItem("auth") === "true";
-
-//   return (
-//     <Router>
-//       <Routes>
-//         <Route path="/" element={<Login />} />
-//         <Route
-//           path="/devices"
-//           element={isLoggedIn ? <Devices /> : <Navigate to="/" />}
-//         />
-//       </Routes>
-//     </Router>
-//   );
-// }
-
 
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Login";
