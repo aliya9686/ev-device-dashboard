@@ -1,5 +1,3 @@
-
-
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import {
@@ -21,7 +19,7 @@ export default function Login() {
   const [loginError, setLoginError] = useState("");
 
   const allowedEmail = "ev@gmail.com";
-  const allowedPassword = "ev123456";
+  const allowedPassword = "Ev123456.";
 
   const validateEmail = (value) => {
     setEmail(value);
@@ -54,7 +52,8 @@ export default function Login() {
   };
 
   const isFormValid =
-    passwordStrength === "Strong" && !emailError && email.length > 0;
+  email.toLowerCase() === allowedEmail.toLowerCase() &&
+  password === allowedPassword;
 
   const handleLogin = () => {
     if (!isFormValid) return;
@@ -92,7 +91,7 @@ export default function Login() {
         {/* Login Form Section */}
         <div className="w-1/2 flex flex-col justify-center p-10">
           <h1 className="text-2xl font-bold mb-1 text-gray-900 text-center">
-            Sign in 
+            Sign in
           </h1>
           <p className="text-gray-600 text-sm mb-8 text-center">
             Access your dashboard securely

@@ -43,7 +43,7 @@ This application requires login to access the dashboard.
 
 **Credentials:**
 - Email: `ev@gmail.com`
-- Password: `ev123456`
+- Password: `Ev123456.`
 
 ---
 
