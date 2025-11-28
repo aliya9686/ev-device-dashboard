@@ -121,6 +121,23 @@ http://localhost:5173
 
 ---
 
+
+
+## Screenshots
+
+### Login Page
+![Login Page](./screenshots/sign_in.png)
+
+### Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+### Settings Page
+![Settings Page](./screenshots/settings.png)
+
+### Side Panel
+![SidePanel Page](./screenshots/side-panel.png)
+
+
 ## Evaluation Criteria (As Required)
 - Clean + Responsive UI
 - Working API communication
