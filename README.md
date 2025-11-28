@@ -125,16 +125,16 @@ http://localhost:5173
 ## Screenshots
 
 ### Login Page
-<img src="./screenshots/sign_in.png" width="700"/>
+<img src="./screenshots/Sign_in.png" width="700"/>
 
 ### Dashboard
-<img src="./screenshots/dashboard.png" width="700"/>
+<img src="./screenshots/Dashboard.png" width="700"/>
 
 ### Settings Page
-<img src="./screenshots/settings.png" width="700"/>
+<img src="./screenshots/Settings.png" width="700"/>
 
 ### Device Details Side Panel
-<img src="./screenshots/side-panel.png" width="700"/>
+<img src="./screenshots/Side-panel.png" width="700"/>
 
 
 
