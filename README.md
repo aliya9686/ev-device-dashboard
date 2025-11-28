@@ -122,20 +122,20 @@ http://localhost:5173
 ---
 
 
-
 ## Screenshots
 
 ### Login Page
-![Login Page](./screenshots/sign_in.png)
+<img src="./screenshots/sign_in.png" width="700"/>
 
 ### Dashboard
-![Dashboard](./screenshots/dashboard.png)
+<img src="./screenshots/dashboard.png" width="700"/>
 
 ### Settings Page
-![Settings Page](./screenshots/settings.png)
+<img src="./screenshots/settings.png" width="700"/>
 
-### Side Panel
-![SidePanel Page](./screenshots/side-panel.png)
+### Device Details Side Panel
+<img src="./screenshots/side-panel.png" width="700"/>
+
 
 
 ## Evaluation Criteria (As Required)
